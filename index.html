@@ -28,6 +28,7 @@
   }
 
   .row {
+    margin-top:10px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -40,7 +41,7 @@
     -ms-flex: 24%;
     flex: 50%;
     max-width: 24%;
-    padding: 0 4px;
+    padding: 0 10px;
   }
 
   .column img {
@@ -118,9 +119,43 @@
     left:1300px;
   }
 
+  #times {
+    display:in-line;
+    padding-left:10px;
+  }
+
+  #us {
+    top:0px;
+    left:25px;
+    font-size:30px;
+    color:blue;
+  }
+  #madrid {
+    top:0px;
+    left:50px;
+    font-size:30px;
+    color:blue;
+  }
+  #aus {
+    top:0px;
+    left:75px;
+    font-size:30px;
+    color:blue;
+  }
+
   </style>
   <body>
-  <div>
+  <div id="times">
+    &nbsp;
+    <strong>Ann Arbor</strong> time:
+    <span id="us">
+    </span>
+    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Madrid </strong>time:
+    <span id="madrid">
+    </span>
+    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Australia </strong>time:
+    <span id="aus">
+    </span>
   <div>
   <div class="row">
     <div class="column">
