@@ -13,35 +13,160 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
   </head>
   <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+    -ms-flex: 25%;
+    flex: 50%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  .ig {
+    top:180px;
+    left:1300px;
+    position: absolute;
+  }
+  .fb {
+    top:180px;
+    left:1450px;
+    position: absolute;
+  }
+  .canvas {
+    top:330px;
+    left:1300px;
+    position: absolute;
+  }
+  .youtube {
+    top:800px;
+    left:1300px;
+    position: absolute;
+  }
+  .netflix {
+    top:480px;
+    left:1300px;
+    position: absolute;
+  }
+  .google {
+    top:10px;
+    left:1300px;
+    position: absolute;
+  }
+  .amazon {
+    top:650px;
+    left:1300px;
+    position: absolute;
+  }
+  .websites {
+    align-items: center;
+  }
   </style>
   <body>
-    Hi
-  </body>
-  <script src="script.js"></script>
-  <div class="container">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox" id="carousel-inner"></div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-
+  <div>
+  <div>
+  <div class="row">
+    <div class="column">
+      <img src="img/1.jpg" style="width:50% height:50%"></img>
+      <img src="img/3.jpg" style="width:50% height:50%"></img>
+      <img src="img/16.jpg" style="width:50% height:50%"></img>
+      <img src="img/14.jpg" style="width:50% height:50%"></img>
     </div>
-    <span id="subtext">Interestingness</span>
-    <span id="date"></span>
-    <span id="comments"></span>
-
-    <div class="navBar">
-        <button class="button" id="option" onclick="getComments()">Show Photo Comments</button>
-        <ul class="commentsUL"></ul>
+    <div class="column">
+      <img src="img/5.jpg" style="width:50% height:50%"></img>
+      <img src="img/12.jpg" style="width:50% height:50%"></img>
+      <img src="img/6.jpg" style="width:50% height:50%"></img>
+      <img src="img/7.jpg" style="width:50% height:50%"></img>
+      <!-- <img src="img/14.jpg" style="width:50% height:50%"></img> -->
+    </div>
+    <div class="column">
+      <img src="img/2.jpg" style="width:50% height:50%"></img>
+      <img src="img/11.jpg" style="width:50% height:50%"></img>
+      <img src="img/9.jpg" style="width:50% height:50%"></img>
+      <img src="img/10.jpg" style="width:50% height:50%"></img>
+      <img src="img/13.jpg" style="width:50% height:50%"></img>
     </div>
 </div>
+<div class="websites">
+  <form action="https://www.google.com/" method="get" target="_blank">
+     <button class="google" type="submit">
+       <img src="img/google.png" width='270' height='130'></img>
+     </button>
+  </form>
+  <form action="https://www.facebook.com/" method="get" target="_blank">
+     <button class="fb" type="submit">
+       <img src="img/facebook.png" width='125' height='110'></img>
+     </button>
+  </form>
+  <form action="https://umich.instructure.com" method="get" target="_blank">
+     <button class="canvas" type="submit">
+       <img src="img/canvas.png" width='270' height='110'></img>
+     </button>
+  </form>
+  <form action="https://instagram.com" method="get" target="_blank">
+     <button class="ig" type="submit">
+       <img src="img/instagram.png" width='125' height='110'></img>
+     </button>
+  </form>
+  <form action="https://youtube.com" method="get" target="_blank">
+     <button class="youtube" type="submit">
+       <img src="img/youtube.png" width='125' height='110'></img>
+     </button>
+  </form>
+  <form action="https://netflix.com" method="get" target="_blank">
+     <button class="netflix" type="submit">
+       <img src="img/netflix.jpg" width='270' height='130'></img>
+     </button>
+  </form>
+  <form action="https://amazon.com" method="get" target="_blank">
+     <button class="amazon" type="submit">
+       <img src="img/amazon.png" width='270' height='120'></img>
+     </button>
+  </form>
+</div>
+  </body>
+    <script src="script.js"></script>
 </html>
