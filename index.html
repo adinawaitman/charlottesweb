@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
    <head>
-     <title>Flickr Storm</title>
+     <title>Charlotte's Web</title>
 
       <meta charset="utf-8">
 
@@ -17,4 +17,31 @@
   <body>
     Hi
   </body>
+  <script src="script.js"></script>
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox" id="carousel-inner"></div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+    <span id="subtext">Interestingness</span>
+    <span id="date"></span>
+    <span id="comments"></span>
+
+    <div class="navBar">
+        <button class="button" id="option" onclick="getComments()">Show Photo Comments</button>
+        <ul class="commentsUL"></ul>
+    </div>
+</div>
 </html>
