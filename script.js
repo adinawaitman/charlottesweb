@@ -2,8 +2,6 @@ $(document).ready( function() {
 
   console.log("Ready!");
 
-  document.getElementById("us").innerHTML = new Date();
-
   var usaTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
   usaTime = new Date(usaTime);
   document.getElementById("us").innerHTML = usaTime.toLocaleString();
@@ -18,4 +16,4 @@ $(document).ready( function() {
   aestTime = new Date(aestTime);
   document.getElementById("aus").innerHTML = aestTime.toLocaleString();
 
-})
+});
